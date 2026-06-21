@@ -1,0 +1,6 @@
+{
+  "name": "Undangan Pernikahan Digital",
+  "description": "Website undangan pernikahan digital interaktif dengan pemutar lagu, galeri foto, kisah cinta, hitung mundur, RSVP online, kado digital, dan ucapan doa restu tamu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300..900;1,300..900&family=Sacramento&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-script: "Sacramento", cursive;
+}
+
+/* Custom fade-in and slide-up utility animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Custom scrollbar styling for dark mode */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0808;
+}
+::-webkit-scrollbar-thumb {
+  background: #5a3825;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9d6d4a;
+}
+
+/* Base resets for immersive theme */
+body {
+  font-family: var(--font-sans);
+  background-color: #0a0505;
+  color: #e0d8d0;
+  overflow-x: hidden;
+}
+
+/* Frosted glass utilities */
+.frosted-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.frosted-card-gold {
+  background: rgba(90, 56, 37, 0.08);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
